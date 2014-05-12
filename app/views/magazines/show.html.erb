@@ -1,0 +1,11 @@
+<div class="subscriptions">
+  <% @magazine.subscriptions.each do |expiration_date| %>
+    <p><%= expiration_date.expires_on %></p>
+  <% end %>
+</div>
+
+<div class="subscribers">
+  <% @magazine.subscribers.each do |subscriber| %>
+    <p><%= subscriber.name %></p>
+  <% end %>
+</div>
